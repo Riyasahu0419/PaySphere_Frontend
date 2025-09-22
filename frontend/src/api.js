@@ -27,6 +27,9 @@
  * All functions return Promises.
  */
 
+export const baseurl = 'https://paysphere-backend.onrender.com'
+// export const baseurl = 'http://localhost:8000/'
+
 // Dummy dataset (couple dozen entries to show paging/filter/sort)
 const DUMMY = (() => {
   const schools = [

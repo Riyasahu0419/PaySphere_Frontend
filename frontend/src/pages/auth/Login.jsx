@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useAuth } from "../../hooks/useAuth.jsx"; // ✅ import hook
+import { baseurl } from "../../api.js";
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -22,7 +23,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:8000/auth/login", formData);
+      const res = await axios.post(`${baseurl}/auth/login`, formData);
 
       // ✅ backend returns { token }
       const token = res.data.token;
