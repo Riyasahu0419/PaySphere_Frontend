@@ -36,8 +36,12 @@ const Login = () => {
 
       navigate("/"); // 🚀 redirect now works
     } catch (err) {
-      setMessage(err.response?.data?.message || "Login failed. Invalid credentials.");
-      alert(err.response?.data?.message || "Login failed. Invalid credentials.");
+      setMessage(
+        err.response?.data?.message || "Login failed. Invalid credentials."
+      );
+      alert(
+        err.response?.data?.message || "Login failed. Invalid credentials."
+      );
     }
   };
 
@@ -63,8 +67,18 @@ const Login = () => {
           required
           style={styles.input}
         />
-        <button type="submit" style={styles.button}>Login</button>
-        <p onClick={()=>navigate('/register')}>if user not registered</p>
+        <button
+          type="button"
+          onClick={() => navigate("/register")}
+          style={{
+            background: "none",
+            border: "none",
+            color: "blue",
+            cursor: "pointer",
+          }}
+        >
+          Not registered? Sign up
+        </button>
       </form>
       {message && <p style={styles.message}>{message}</p>}
     </div>
