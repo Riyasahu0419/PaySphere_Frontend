@@ -23,7 +23,7 @@ const Register = () => {
     try {
       const res = await axios.post(`${baseurl}/auth/register`, formData);
       setMessage(res.data.message || "Registration successful!");
-      navigate('/login')
+      navigate("/login");
       setFormData({ email: "", password: "" });
     } catch (err) {
       setMessage(
@@ -55,19 +55,22 @@ const Register = () => {
           style={styles.input}
         />
         <button type="submit" style={styles.button}>
-  Register
-</button>
+          Register
+        </button>
 
-<p>
-  Already registered?{" "}
-  <span
-    onClick={() => navigate('/login')}
-    style={{ color: "blue", cursor: "pointer", textDecoration: "underline" }}
-  >
-    Login here
-  </span>
-</p>
-
+        <p>
+          Already registered?{" "}
+          <span
+            onClick={() => navigate("/login")}
+            style={{
+              color: "blue",
+              cursor: "pointer",
+              textDecoration: "underline",
+            }}
+          >
+            Login here
+          </span>
+        </p>
       </form>
       {message && <p style={styles.message}>{message}</p>}
     </div>
