@@ -52,7 +52,7 @@ function AppContent() {
           <Toolbar className="flex justify-between">
             <div className="flex items-center gap-4">
               <IconButton edge="start" aria-label="menu">
-                <MenuIcon />
+                
               </IconButton>
               <Typography
                 variant="h6"
