@@ -12,7 +12,7 @@ It integrates with a **Payment Gateway API**, provides **REST APIs**, and a **da
 ---
 ## Demo
 
-- **Live Demo**: [[https://pay-sphere-frontend.vercel.app/login](https://pay-sphere-frontend.vercel.app/login)]
+- **Live Demo**: [[https://pay-sphere-frontend.vercel.app/](https://pay-sphere-frontend.vercel.app/)]
 - **GitHub Repository (Frontend)**: [[https://github.com/Riyasahu0419/PaySphere_Frontend](https://github.com/Riyasahu0419/PaySphere_Frontend)]
 - **GitHub Repository (Backend)**: [[https://github.com/Riyasahu0419/PaySphere_Backend](https://github.com/Riyasahu0419/PaySphere_Backend)]
 
@@ -95,5 +95,6 @@ GET /api/products - Get all products
 GET /api/products/:category - Get products by category
 GET /api/products/:id - Get specific product details
 ```
+
 
 
